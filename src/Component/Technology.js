@@ -10,7 +10,7 @@ function Technology() {
     if (technology.navLink === "technology") {
       return (
         <div
-          className="container-fluid technology_page page_top px-0"
+          className="container-fluid technology_page default_bottom page_top px-0"
           key={technology.id}
           style={{ background: `url(${technology.background}) no-repeat` }}
         >
@@ -20,8 +20,8 @@ function Technology() {
               {technology.textSmallTitle}
             </h5>
             <div className="d-flex flex-wrap justify-content-between text-white">
-              <div className="w-50 d-flex technology_text_block pt-5 order-lg-1 order-md-1 order-sm-1 order-2">
-                <div>
+              <div className="d-flex technology_text_block order-lg-1 order-md-2 order-sm-2 order-2">
+                <div className="tech_menu_block">
                   {technology.number_menu.map((num) => {
                     if (num.id === 1) {
                       return (
@@ -31,7 +31,16 @@ function Technology() {
                           activeClassName="active4"
                           className="menu"
                           to={`/technology`}
-                          onClick={(e)=>smallMenu(e, `Text${num.id}`, `Img${num.id}`, "active4", "techText", "techImage")}
+                          onClick={(e) =>
+                            smallMenu(
+                              e,
+                              `Text${num.id}`,
+                              `Img${num.id}`,
+                              "active4",
+                              "techText",
+                              "techImage"
+                            )
+                          }
                         >
                           <p className="m-0">{num.id}</p>
                         </NavLink>
@@ -44,7 +53,16 @@ function Technology() {
                           activeClassName=""
                           className="menu"
                           to={`/technology`}
-                          onClick={(e)=>smallMenu(e, `Text${num.id}`, `Img${num.id}`, "active4", "techText", "techImage")}
+                          onClick={(e) =>
+                            smallMenu(
+                              e,
+                              `Text${num.id}`,
+                              `Img${num.id}`,
+                              "active4",
+                              "techText",
+                              "techImage"
+                            )
+                          }
                         >
                           <p className="m-0">{num.id}</p>
                         </NavLink>
@@ -62,10 +80,27 @@ function Technology() {
                   ))}
                 </div>
               </div>
-              <div className="w-50 d-flex justify-content-end order-lg-2 order-md-2 order-sm-2 order-1 technology_image_block">
-                {technology.number_menu.map((num) => (
-                  <img src={`${num.image}`}  alt={`${num.title}`} className={`techImage Img${num.id}`} />
-                ))}
+
+              <div className="d-flex justify-content-end order-lg-2 order-md-1 order-sm-1 order-1 technology_image_block">
+                {technology.number_menu.map((num) => {
+                  if (window.matchMedia("(max-width: 992px)").matches) {
+                    return (
+                      <img
+                        src={`${num.image2}`}
+                        alt={`${num.title}`}
+                        className={`techImage qwerty Img${num.id}`}
+                      />
+                    );
+                  } else {
+                    return (
+                      <img
+                        src={`${num.image}`}
+                        alt={`${num.title}`}
+                        className={`techImage Img${num.id}`}
+                      />
+                    );
+                  }
+                })}
               </div>
             </div>
           </div>

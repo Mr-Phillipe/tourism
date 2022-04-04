@@ -1,23 +1,3 @@
-import { useState } from "react";
-
-export const useFetching = (callback)=>{
-  const [isLoading, setIsLoading] = useState(false)
-  const [err, setErr] = useState("");
-
-  const fetching = async () =>{
-    try {
-      setIsLoading(true);
-      await callback();
-    } catch (e) {
-      setErr(e.message);
-    } finally{
-      setIsLoading(false);
-    }
-  }
-
-  return [fetching, isLoading, err];
-}
-
 export const smallMenu = (evt, text, img, active, menuText, menuImage) => {
   var x = document.getElementsByClassName(`${menuText}`);
   var y = document.getElementsByClassName(`${menuImage}`);

@@ -21,6 +21,20 @@
   .dec_page_image {
     padding-left: 0px;
   }
+  /* ================================================ */
+
+  .technology_text_block a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tech_block_text {
+    margin-left: 30px;
+    height: auto;
+  }
+  .techImage {
+    height: 390px;
+  }
 }
 
 @media (max-width: 1113.9px) and (min-width: 992px) {
@@ -43,6 +57,21 @@
   }
   .crew_text_block a{
     padding: 20px 0px !important;
+  }
+
+  /* ================================================ */
+
+  .technology_text_block a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tech_block_text {
+    margin-left: 30px;
+    height: auto;
+  }
+  .techImage {
+    height: 390px;
   }
 }
 
@@ -142,6 +171,52 @@
   .crew_image_block {
     width: 100%;
   }
+
+  /* ================================================ */
+
+  .technology_page_default{
+    padding: 0;
+  }
+  .technology_page_default .page_text_h5{
+    padding: 0px 39px 50px;
+  }
+  .technology_text_block{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0px 0px 0px;
+  }
+  .tech_menu_block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+  }
+  .technology_text_block a {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+  }
+
+  .tech_block_text {
+    width: 100% !important;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .techText{
+    width: 558px;
+  }
+  .technology_image_block{
+    width: 100%;
+  }
+  .techImage {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* sm */
@@ -196,6 +271,13 @@
   /* .crew_text_block a{
     padding: 0px 0px 30px 0px !important;
   } */
+
+
+  /* [================================================================================== */
+
+  .technology_page_default{
+    padding: 0;
+  }
 }
 
 
@@ -213,6 +295,10 @@
   }
   .page_top{
     padding-top: 80px;
+  }
+  .page_text_h5{
+    width: 100%;
+    text-align: center;
   }
   nav{
     display: flex;
@@ -369,12 +455,28 @@
     padding: 10px 0px !important;
     z-index: 1111;
   }
+  .technology_page_default{
+    padding: 0;
+  }
+  .default_bottom{
+    padding-bottom: 0;
+  }
+  .technology_page_default .page_text_h5{
+    padding: 0px 39px 30px;
+  }
+  .techText{
+    width: 100%;
+    padding: 0px 20px;
+  }
 }
 
 
 @media (max-width: 422px) {
   .planet_menu{
     padding: 20px 30px;
+  }
+  .tech_block_text h2 {
+    font-size: 46px;
   }
 }
 
