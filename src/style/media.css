@@ -1,0 +1,389 @@
+@media (max-width: 1340.9px) {
+  .navLink {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 47px;
+    padding-inline-end: 100px;
+  }
+  .all-container{
+    padding: 0px 100px;
+  }
+}
+
+/* lg  */
+
+@media (max-width: 1199.9px) and (min-width: 1114px) {
+  nav {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 39px;
+  }
+  .dec_page_image {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 1113.9px) and (min-width: 992px) {
+  nav {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 39px;
+  }
+  .dotText {
+    padding-top: 70px;
+  }
+  .dec_page_image {
+    padding-left: 0px;
+  }
+  .des_page_text {
+    width: 50% !important;
+  }
+  .dotImage {
+    height: 450px;
+  }
+  .crew_text_block a{
+    padding: 20px 0px !important;
+  }
+}
+
+/* md  */
+
+@media (max-width: 991.9px) {
+  .all-container{
+    padding: 0px 39px;
+    justify-content: space-between !important;
+  }
+  nav {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 39px;
+  }
+  .navLink {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 48px;
+    padding-inline-end: 48px;
+    height: 96px;
+  }
+  .menu-link{
+    line-height: 70px;
+  }
+  .nav-menu{
+    padding-top: 0px !important;
+  }
+  .navLink-number {
+    display: none !important;
+  }
+  .navbar-line {
+    display: none !important;
+  }
+  .navbar-brand {
+    width: 500px !important;
+  }
+
+  /* =================home page =================== */
+
+  .home_page_button button {
+    width: 234px;
+    height: 234px;
+    margin-right: 20px;
+  }
+  .home_page_button button:hover{
+    box-shadow: 0px 0px 0px 45px rgba(255, 255, 255,0.1);
+  }
+
+  /* ============================================== */
+
+  .dec_page_image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .des_page_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .des_page_text_block{
+    width: 573px !important;
+  }
+  .planet_menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+  }
+  .planet_menu a{
+    margin: 0;
+  }
+  .planetText{
+    text-align: center;
+  }
+
+
+  /* =========================crew page======================== */
+
+  .crew_text_block {
+    text-align: center;
+    width: 100%;
+  }
+  .crew_text_block h5{
+    text-align: left;
+  }
+  .dotText {
+    padding-top: 70px;
+  }
+  .crew_text_block a {
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 0px 0px 30px 0px !important;
+  }
+  .crew_image_block {
+    width: 100%;
+  }
+}
+
+/* sm */
+
+@media (max-width: 767.9px) {
+  .navbar-brand {
+    width: 350px !important;
+  }
+
+  .all-container{
+    justify-content: center !important;
+  }
+
+  /* =================home page =================== */
+
+  .home_page{
+    padding: 202px 0px 88px 0px;
+    background: url("./../images/home/background-home-tablet.jpg") no-repeat !important;
+    background-size: cover !important;
+  }
+  .home_page_text{
+    text-align: center;
+    width: 450px;
+    display: block !important;
+    padding-bottom: 156px;
+  }
+  .home_page_button{
+    text-align: center;
+    width: 450px;
+    display: block !important;
+  }
+  .home_page_button button {
+    width: 234px;
+    height: 234px;
+    margin-right: 0px;
+  }
+
+  /* ============================= destination ======================================= */
+
+  .destination_page {
+    background: url("./../images/destination/background-destination-tablet.jpg") no-repeat !important;
+    background-size: cover !important;
+  }
+
+  /* ======================================crew page ================================ */
+
+  .crew_page {
+    background: url("./../images/crew/background-crew-tablet.jpg") no-repeat !important;
+    background-size: cover !important;
+  }
+
+  /* .crew_text_block a{
+    padding: 0px 0px 30px 0px !important;
+  } */
+}
+
+
+@media (max-width: 680.9px) and (min-width: 575.9px) {
+  .planet_menu{
+    padding: 30px 130px;
+  }
+}
+
+/* xs */
+
+@media (max-width: 575.9px) {
+  .all-container{
+    padding: 0px 15px;
+  }
+  .page_top{
+    padding-top: 80px;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 24px;
+  }
+  .nav-menu{
+    padding-top: 15px !important;
+  }
+  .navLink {
+    display: inline-block !important;
+    position: absolute;
+    top: 0;
+    right: -75%;
+    width: 75% !important;
+    height: 100vh;
+    padding-right: 0px !important;
+    padding-top: 33px;
+    transition: all 0.4s ease-in-out;
+    z-index: 111 !important;
+  }
+
+  .show_navLink{
+    right: 0px;
+  }
+  
+  .menu-hamburger button{
+    background: none;
+    border: none;
+  }
+  .menu-close{
+    justify-content: flex-end !important;
+    margin-right: 26px !important;
+    padding-bottom: 60px;
+  }
+  .menu-close button{
+    background: none;
+    border: none;
+  }
+  .menu-link {
+    display: flex !important;
+    line-height: 40px !important;
+    margin-bottom: 15px;
+  }
+  .menu-link:hover {
+    padding-top: 0px !important;
+    border-bottom: none !important;
+  }
+  .navLink-number {
+    display: block !important;
+  }
+  .active{
+    padding-top: 0px !important;
+    border-bottom: none !important;
+    border-right: 4px solid white !important;
+  }
+
+  /* ====================================Home Page=========================== */
+  
+  .home_page{
+    padding: 172px 0px 47px 0px;
+    background: url("./../images/home/background-home-mobile.jpg") no-repeat !important;
+    background-size: cover !important;
+  }
+  .menuTopHome{
+    width: 100%;
+    background: url("./../images/home/background-home-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding: 10px 0px !important;
+  }
+  .home_page_text{
+    padding-bottom: 81px;
+    width: 400px;
+  }
+  .home_page_text h5{
+    font-size: 21px;
+  }
+  .home_page_text h1{
+    font-size: 90px;
+  }
+  .home_page_text p{
+    font-size: 12px;
+  }
+
+  /* =============================Destination page==================================== */
+
+  .destination_page {
+    background: url("./../images/destination/background-destination-mobile.jpg") no-repeat !important;
+    background-size: cover !important;
+    text-align: center;
+  }
+  .menuTopDestination{
+    background: url("./../images/destination/background-destination-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding: 10px 0px !important;
+    z-index: 1111;
+  }
+
+  .planet_menu{
+    padding: 20px 70px;
+  }
+
+  .planetText h1{
+    font-size: 68px;
+  }
+  .planetText .long-p {
+    height: 140px;
+  }
+
+  /* =============================Crew page==================================== */
+
+  .crew_page {
+    background: url("./../images/crew/background-crew-mobile.jpg") no-repeat !important;
+    background-size: cover !important;
+  }
+  .menuTopCrew{
+    background: url("./../images/crew/background-crew-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding: 10px 0px !important;
+    z-index: 1111;
+  }
+  .crew_text_block h5{
+    text-align: center;
+  }
+  .dotText {
+    padding-top: 00px;
+  }
+  .crew_text_block a {
+    padding: 0px 0px 20px 0px !important;
+  }
+  .dotText h2 {
+    font-size: 20px;
+  }
+  .dotText h1 {
+    font-size: 34px;
+  }
+  .dotText p {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .crew_image_block{
+    border-bottom: 1px solid rgba(255, 255, 255,0.1);
+    margin-bottom: 30px;
+  }
+  .dotImage {
+    height: 270px;
+  }
+
+   /* =============================Crew page==================================== */
+
+   .menuTopTechnology{
+    background: url("./../images/technology/background-technology-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding: 10px 0px !important;
+    z-index: 1111;
+  }
+}
+
+
+@media (max-width: 422px) {
+  .planet_menu{
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .dec_footer_text_first{
+    width: 100% !important;
+  }
+  .dec_footer_text_second{
+    width: 100% !important;
+    padding-top: 30px;
+  }
+}
