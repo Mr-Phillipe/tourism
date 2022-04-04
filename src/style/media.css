@@ -449,6 +449,10 @@
 
    /* =============================Crew page==================================== */
 
+   .technology_page {
+    background: url("./../images/technology/background-technology-mobile.jpg") no-repeat !important;
+    background-size: cover !important;
+  }
    .menuTopTechnology{
     background: url("./../images/technology/background-technology-mobile.jpg") no-repeat;
     background-size: cover;
