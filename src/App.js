@@ -14,7 +14,7 @@ import Technology from "./Component/Technology";
 
 function App() {
   const dispatch = useDispatch();
-
+  
   useEffect(() => {
     dispatch(setProduct(Database));
   });
